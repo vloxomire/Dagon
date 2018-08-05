@@ -45,7 +45,7 @@
         android:background="@android:color/holo_orange_dark"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bSumar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/eText2"
