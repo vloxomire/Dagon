@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,27 +10,48 @@
 
     <EditText
         android:id="@+id/eText1"
-        android:layout_width="wrap_content"
+        android:layout_width="172dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="146dp"
+        android:layout_alignStart="@+id/eText2"
+        android:layout_marginTop="77dp"
         android:ems="10"
         android:hint="INGRESE UN VALOR"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="49dp" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/eText2"
-        android:layout_width="wrap_content"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="215dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="168dp"
         android:ems="10"
         android:hint="INGRESE UN VALOR"
         android:inputType="number"
         tools:layout_editor_absoluteX="51dp"
         tools:layout_editor_absoluteY="121dp" />
+
+    <TextView
+        android:id="@+id/tView"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="197dp"
+        android:ems="11"
+        android:hint="RESULTADO" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/eText2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="-168dp"
+        android:layout_marginEnd="43dp"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:text="suma" />
+
 </RelativeLayout>
