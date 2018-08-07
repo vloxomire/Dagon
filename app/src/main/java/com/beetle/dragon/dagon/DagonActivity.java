@@ -1,6 +1,7 @@
 package com.beetle.dragon.dagon;
 
 import android.app.Activity;
+import android.net.sip.SipSession;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -11,8 +12,17 @@ public class DagonActivity extends Activity {
     //Definimos variables en java donde almacenamos las referencias a los objetos definidos en los
     // archivos xml
     EditText eText1, eText2;
-    Button button; //el unico nombre de variable q toma los tipo Button son button?
+    Button button;
     TextView tView;
+    ListenerResta listenerResta; //variable del listenerResta declarada en memoria
+
+    //Genero los get de los editText. Me permiten obtener al valor de los EditText
+    public EditText geteText1() {
+        return eText1;
+    }
+    public EditText geteText2() {
+        return eText2;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {//En el método onCreate se enlazan las
@@ -23,6 +33,8 @@ public class DagonActivity extends Activity {
         eText1 = findViewById(R.id.eText1);
         eText2 = findViewById(R.id.eText2);
         tView = findViewById(R.id.tView);
+
+        listenerResta = new ListenerResta(this);
     }
     //(el método debe recibir como parámetro un objeto de la clase View)
 public void metSumar(View vSumar){
