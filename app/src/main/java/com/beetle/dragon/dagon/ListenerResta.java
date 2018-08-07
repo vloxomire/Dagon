@@ -1,4 +1,7 @@
 package com.beetle.dragon.dagon;
+import android.content.Intent;
+import android.view.View;
 
-public class ListenerResta {
+public class ListenerResta implements View.OnClickListener {
+    DagonActivity context;
 }
