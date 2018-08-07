@@ -12,7 +12,7 @@ public class DagonActivity extends Activity {
     //Definimos variables en java donde almacenamos las referencias a los objetos definidos en los
     // archivos xml
     EditText eText1, eText2;
-    Button button;
+    Button buttonResta;
     TextView tView;
     ListenerResta listenerResta; //variable del listenerResta declarada en memoria
 
@@ -33,8 +33,13 @@ public class DagonActivity extends Activity {
         eText1 = findViewById(R.id.eText1);
         eText2 = findViewById(R.id.eText2);
         tView = findViewById(R.id.tView);
+        buttonResta =findViewById(R.id.buttonResta);
 
+        //objetos listener
         listenerResta = new ListenerResta(this);
+
+        //seteo botones con listener
+        buttonResta.setOnClickListener(ListenerResta);
     }
     //(el método debe recibir como parámetro un objeto de la clase View)
 public void metSumar(View vSumar){
